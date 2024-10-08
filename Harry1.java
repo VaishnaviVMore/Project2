@@ -19,7 +19,7 @@ public class Harry1 {
         // }
         // System.out.println(sum);
         //PROBLEM2
-        float arr[]={3.4f,5.6f,7.8f,9.9f,5.7f};
+      /*   float arr[]={3.4f,5.6f,7.8f,9.9f,5.7f};
         float num=5.6f;
         boolean isInarray=false;
         for(int i=0;i<arr.length;i++){
@@ -34,5 +34,17 @@ public class Harry1 {
         else{
             System.out.println("Number is not in array");
         }
+    }
+        */
+        //PROBLEM3
+      /*   float arr[]={2.4f,2.7f,4.9f,5.8f,5.9f};
+        float sum=0;
+        for(float element:arr){//for-each loop
+            sum+=element;
+        }
+        System.out.println("Average is: "+sum/arr.length);
+        */
+        //PROBLEM4
+        
     }
 }
