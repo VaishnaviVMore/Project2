@@ -90,7 +90,7 @@ public class Harry1 {
             // }
             
             //App3
-            int m=Math.floorDiv(arr.length,2);
+           /*  int m=Math.floorDiv(arr.length,2);
             for(int i=0;i<m;i++){
                 int temp=arr[i];
                 arr[i]=arr[n-1-i];
@@ -99,5 +99,31 @@ public class Harry1 {
             for(int element:arr){
                 System.out.println(element);
             }
+                */
+                //PROBLEM6
+                //APP1
+                 //int max=Integer.MIN_VALUE;
+                // for(int i=0;i<n;i++){
+                //     if(max<arr[i]){
+                //         max=arr[i];
+                //     }
+                // }
+                // System.out.println(max);
+            //APP2
+        // for(int element:arr){
+        //     if(element>max){
+        //         max=element;
+        //     }
+        // }
+        // System.err.println(max);
+        
+        //PROBLEM7
+        int min=Integer.MAX_VALUE;
+        for(int e:arr){
+            if(min>e){
+                min=e;
+            }
+        }
+        System.out.println(min);
 }
 }
