@@ -45,7 +45,7 @@ public class Harry1 {
         System.out.println("Average is: "+sum/arr.length);
         */
         //PROBLEM4
-        int arr[][]={{1,2,3},
+       /*  int arr[][]={{1,2,3},
                     {4,5,6}};
         int arr1[][]={{1,2,3},
                     {4,5,6}};
@@ -57,7 +57,6 @@ public class Harry1 {
                 System.out.format("Setting value of i=%d and j=%d\n",i,j);
                 result[i][j]=arr[i][j]+arr1[i][j];
             }
-            //System.out.println();
         }
 
         for(int i=0;i<arr.length;i++){
@@ -67,5 +66,38 @@ public class Harry1 {
             }
             System.out.println();
     }
+            */
+            //PROBLEM5
+            //Approach1
+             int arr[]={2,4,5,6,7};
+            // for(int i=arr.length-1;i>=0;i--){
+            //     System.out.print(arr[i]+" ");
+            // }
+            //App2
+             int n=arr.length;
+            // int right=n-1;
+            // int left=0;
+            // while(left<right){
+            //     int temp=arr[left];
+            //     arr[left]=arr[right];
+            //     arr[right]=temp;
+
+            //     left++;
+            //     right--;
+            // }
+            // for(int i=0;i<arr.length;i++){
+            //     System.out.println(arr[i]+" ");
+            // }
+            
+            //App3
+            int m=Math.floorDiv(arr.length,2);
+            for(int i=0;i<m;i++){
+                int temp=arr[i];
+                arr[i]=arr[n-1-i];
+                arr[n-1-i]=temp;
+            }
+            for(int element:arr){
+                System.out.println(element);
+            }
 }
 }
