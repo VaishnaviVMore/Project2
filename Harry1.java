@@ -69,7 +69,7 @@ public class Harry1 {
             */
             //PROBLEM5
             //Approach1
-             int arr[]={2,4,5,6,7};
+             int arr[]={19,10,2,4,5,6,7};
             // for(int i=arr.length-1;i>=0;i--){
             //     System.out.print(arr[i]+" ");
             // }
@@ -118,12 +118,28 @@ public class Harry1 {
         // System.err.println(max);
         
         //PROBLEM7
-        int min=Integer.MAX_VALUE;
+        /*int min=Integer.MAX_VALUE;
         for(int e:arr){
             if(min>e){
                 min=e;
             }
         }
         System.out.println(min);
+         */
+
+         //PROBLEM8
+         boolean isSorted=true;
+         for(int i=0;i<n-1;i++){
+            if(arr[i]>arr[i+1]){
+                isSorted=false;
+                break;
+            }
+         }
+         if(isSorted){
+            System.out.println("Sorted array");
+         }
+         else{
+            System.out.println("Array is not sorted");
+         }
 }
 }
